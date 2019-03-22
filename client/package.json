@@ -1,0 +1,38 @@
+{
+  "name": "parcel-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "build": "parcel build src/index.html",
+    "serve-build": "npm run build && serve -s dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mthpvg/parcel-react.git"
+  },
+  "author": "mthpvg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mthpvg/parcel-react/issues"
+  },
+  "homepage": "https://github.com/mthpvg/parcel-react#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "parcel-bundler": "^1.10.1",
+    "sass": "^1.14.0",
+    "serve": "^10.0.1"
+  },
+  "dependencies": {
+    "auth0-js": "^9.10.0",
+    "history": "^4.9.0",
+    "react": "^16.8.4",
+    "react-bootstrap": "^1.0.0-beta.6",
+    "react-dom": "^16.8.4",
+    "react-router-dom": "^4.3.1"
+  }
+}
